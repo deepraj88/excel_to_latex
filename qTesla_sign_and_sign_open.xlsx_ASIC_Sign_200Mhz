@@ -1,0 +1,158 @@
+%This code is generated from --> qTesla_sign_and_sign_open.xlsx sheet name - ASIC_Sign_200Mhz
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{comment}
+\usepackage{pgfplots, pgfplotstable}
+\usetikzlibrary{math, decorations.pathreplacing,angles,quotes,bending, arrows.meta}
+\pgfplotsset{compat=1.15,every tick label/.append style={font=\tiny}}
+
+\pgfplotstableread{
+X Y Z 
+1.0   1.0   1.0
+}\baseline
+
+\pgfplotstableread{
+X Y Z 
+1.4887294217082905   1.000090720913741   1.0
+}\datatableAA
+\pgfplotstableread{
+X Y Z 
+1.0   1.0   1.0
+}\datatableAB
+\pgfplotstableread{
+X Y Z 
+1.036961822175295   0.8142035686583435   1.0
+}\datatableAC
+\pgfplotstableread{
+X Y Z 
+1.043336869420029   0.7213053529875153   1.0
+}\datatableAD
+\pgfplotstableread{
+X Y Z 
+1.0470170833840955   0.6748562451521012   1.0
+}\datatableAE
+\pgfplotstableread{
+X Y Z 
+1.0597627457541605   0.6516316912343941   1.0
+}\datatableAF
+\pgfplotstableread{
+X Y Z 
+1.0919693979782092   0.6400194142755405   1.0
+}\datatableAG
+\pgfplotstableread{
+X Y Z 
+1.1425283505447752   0.6342132757961139   1.0
+}\datatableAH
+\pgfplotstableread{
+X Y Z 
+1.2525767530526482   0.6313102065564005   1.0
+}\datatableAI
+\pgfplotstableread{
+X Y Z 
+1.0354826427354797   0.627705562250423   1.0
+}\datatableAJ
+\pgfplotstableread{
+X Y Z 
+1.0383207386183175   0.627705562250423   1.0
+}\datatableAK
+\pgfplotstableread{
+X Y Z 
+1.0448451455158976   0.6277297544940873   1.0
+}\datatableAL
+\pgfplotstableread{
+X Y Z 
+1.0474554629441275   0.6277781389814158   1.0
+}\datatableAM
+\pgfplotstableread{
+X Y Z 
+1.060713765581333   0.6278749079560729   1.0
+}\datatableAN
+\pgfplotstableread{
+X Y Z 
+1.0900299493271661   0.6280684459053871   1.0
+}\datatableAO
+\pgfplotstableread{
+X Y Z 
+1.1432565790138336   0.6284555218040156   1.0
+}\datatableAP
+\pgfplotstableread{
+X Y Z 
+1.2539661516701202   0.6292296736012725   1.0
+}\datatableAQ
+
+\makeatletter
+        \pgfdeclareplotmark{dot}
+        {%
+            \fill circle [x radius=0.02, y radius=0.08];
+        }%
+\makeatother
+
+
+\pgfplotsset{
+/pgfplots/colormap={autumn}{rgb255=(255,255,255) rgb255=(255,0,0) }
+}
+
+\begin{document}
+\begin{tikzpicture}[scale=1.5]
+\begin{axis}
+    [   
+    view={120}{40},
+        width=220pt,
+        height=220pt,
+        grid=major,
+        colorbar,
+        z buffer=sort,
+        xmin=1.0,xmax=1.4887294217082905,
+        ymin=0.627705562250423,ymax=1.000090720913741,
+        zmin=0,zmax=5,
+        enlargelimits=upper,
+        xlabel style={sloped},
+        xlabel={Normalized Area},
+        legend style={at={(0.65,0.33)}, cells={align=left}, anchor=north,legend columns=1, font=\tiny, fill opacity=0.7, text opacity=1, draw opacity=1},
+                ylabel style={sloped},
+        ylabel={Normalized Latency},
+        zlabel={Security level},
+        %point meta={x+y},
+        point meta max = 1.3081100358248634,
+        point meta min = 1.0,
+        colorbar style={
+        title= \tiny{Normalized Power},
+        title style={
+            text width=3em,       % Abstand yticks zu colorbar
+        },
+        at={(1.075,0.1)}, % Coordinate system relative to the main axis. (1,1) is upper right corner of main axis.
+        anchor=south west,
+        %/pgf/number format/precision=3,
+        ytick={1.0,1.3081100358248634},
+        height=2/3*\pgfkeysvalueof{/pgfplots/parent axis height}, % Scale the colorbar relative to the main axis
+        /pgf/number format/.cd, % Change the key directory to /pgf/number format
+        %fixed, fixed zerofill, precision=1,
+        /tikz/.cd  % Change back to the normal key directory
+        }
+    ]
+
+
+\addplot3[only marks,fill=red!10,mark=*,mark size=3] table {\datatableAA};
+\addplot3[only marks,fill=red!0,mark=*,mark size=3] table {\datatableAB};
+\addplot3[only marks,fill=red!10,mark=*,mark size=3] table {\datatableAC};
+\addplot3[only marks,fill=red!10,mark=*,mark size=3] table {\datatableAD};
+\addplot3[only marks,fill=red!10,mark=*,mark size=3] table {\datatableAE};
+\addplot3[only marks,fill=red!10,mark=*,mark size=3] table {\datatableAF};
+\addplot3[only marks,fill=red!17,mark=*,mark size=3] table {\datatableAG};
+\addplot3[only marks,fill=red!28,mark=*,mark size=3] table {\datatableAH};
+\addplot3[only marks,fill=red!100,mark=*,mark size=3] table {\datatableAI};
+\addplot3[only marks,fill=red!8,mark=*,mark size=3] table {\datatableAJ};
+\addplot3[only marks,fill=red!25,mark=*,mark size=3] table {\datatableAK};
+\addplot3[only marks,fill=red!4,mark=*,mark size=3] table {\datatableAL};
+\addplot3[only marks,fill=red!4,mark=*,mark size=3] table {\datatableAM};
+\addplot3[only marks,fill=red!10,mark=*,mark size=3] table {\datatableAN};
+\addplot3[only marks,fill=red!21,mark=*,mark size=3] table {\datatableAO};
+\addplot3[only marks,fill=red!26,mark=*,mark size=3] table {\datatableAP};
+\addplot3[only marks,fill=red!76,mark=*,mark size=3] table {\datatableAQ};
+\addplot3[only marks,fill=red!0,mark=*,mark size=5] table {\baseline};
+\legend{Security Level-1,,,,,,,,,,,,,,,,,Ref. Baseline}
+
+\end{axis}
+\end{tikzpicture}
+
+\end{document}

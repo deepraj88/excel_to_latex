@@ -1,0 +1,8 @@
+Hi,
+
+This propject converts excelsheet to latex file which generates 3-D graph with power as one more dimension.
+
+Example:
+python3 <name of excel file> <name of the sheet>
+python3 excel_to_latex.py qTesla_sign_and_sign_open.xlsx ASIC_Sign_200Mhz
+Output file=qTesla_sign_and_sign_open.xlsx_ASIC_Sign_200Mhz
